@@ -8,6 +8,7 @@ ENV PATH $PATH:/usr/local/vertx/bin
 
 # Add app
 ADD vertxrun.sh /root/
+RUN chmod +x /root/vertxrun.sh
 ADD server.js /root/server.js
 
 # Expose
